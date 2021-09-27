@@ -9,22 +9,26 @@
     <body>
         <!--HEADER (CABEÇA DO DOCUMENTO) PODE INSERIR TÍTULOS, IMAGENS, PARÁGRAFOS, NAVEGAÇÃO (TODOS OS ELEMENTOS QUE COMPÕEM O TOPO)-->
         <header>
-            <img src="/img/banner.jpg" alt="">
-            <img src="/img/logo.png" alt="">
+            <img src="/img/banner.jpg" alt="Banner fundo rosa com dois cães e dois gatos">
+            <img src="/img/logo.png" alt="Logo da Cute Pet">
             <h1>Sobre Cute Pet</h1>
         </header>
-        <!--O ELEMENTO <NAV> É UTILIZADO PARA REPRESENTAR UM AGRUPAMENTO DE LINKS DE NAVEGAÇÃO-->
+        <!--O ELEMENTO <NAV> É UTILIZADO PARA REPRESENTAR UM AGRUPAMENTO DE LINKS DE NAVEGAÇÃO
+        A TAG <UL> DEFINE UMA LISTA NÃO ORDENADA
+        O ATRIBUTO GLOBAL TITLE CONTÉM TEXTOS REPRESENTANDO INFORMAÇÕES DE ORIENTAÇÃO, RELACIONADOS AO ELEMENTO A QUE PERTENCE
+        O ELEMENTO HTML <IMG> REPRESENTA A INSERÇÃO DE IMAGEM NO DOCUMENTO
+        DEFINIÇÃO DE TÍTULO PARA OS ÍCONES DAS REDES SOCIAIS COM O ELEMENTO TITLE-->
         <nav>
             <ul>
-                <li><a href="#"><img src="/img/instagram.png" alt="" title="Instagram"></a></li>
-                <li><a href="#"><img src="/img/facebook.png" alt="" title="Facebook"></a></li>
-                <li><a href="#"><img src="/img/whatsapp.png" alt="" title="WhatsApp"></a></li>       
+                <li><a href="#"><img src="/img/instagram.png" alt="Ícone Instagram" title="Instagram"></a></li>
+                <li><a href="#"><img src="/img/facebook.png" alt="Ícone Facebook" title="Facebook"></a></li>
+                <li><a href="#"><img src="/img/whatsapp.png" alt="Ícone WhatsApp" title="WhatsApp"></a></li>       
             </ul>
         </nav>
         <nav>
             <ul>
-                <li><a href="#"><img src="/img/user.png" alt="">Minha Conta</a></li>
-                <li><a href="#"><img src="/img/cart.png" alt="">Meu Carrinho</a></li>
+                <li><a href="#"><img src="/img/user.png" alt="Ícone Usuário">Minha Conta</a></li>
+                <li><a href="#"><img src="/img/cart.png" alt="ícone Carrinho">Meu Carrinho</a></li>
             </ul>
         </nav>
         <nav> 
@@ -34,12 +38,18 @@
                 <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
-        <input type="text" id="search" placeholder="Buscar..."/>
-        <img src="/img/search.png" id="search1" title="Pesquisar na página" alt="Buscar"/>
+        <!--<INPUT TYPE="SEARCH"> DEFINE UM CAMPO DE TEXTO PARA INSERIR UMA SEQUÊNCIA DE PESQUISA
+        A TAG <FORM> É USADA PARA CRIAR UM FORMULÁRIO HTML PARA ENTRADA DO USUÁRIO-->
+        <form>
+            <input type="text" id="search1" placeholder="Buscar..."/>
+            <input type="submit">
+            <img src="/img/search.png" alt="ícone Lupa">
+        </form> 
         <!--O ELEMENTO <MAIN> IDENTIFICA O CONTEÚDO PRINCIPAL DA PÁGINA (GERALMENTE É O CONTEÚDO ATRELADO AO TÍTULO) -->
         <main>
             <!--O ELEMENTO <SECTION> SEPARA AS SEÇÕES / TÓPICOS DO DOCUMNTO-->
             <section>
+                <!--A TAG <MARK> MARCA O TEXTO SELECIONADO-->
                 <h2><mark>Institucional</mark></h2>
                 <!--O ELEMENTO <ARTICLE> É USADO PARA ESCREVER TEXTOS QUE IDEPENDEM DE OUTROS PARA TER SENTIDO (EXEMPLO: ARTIGOS EM UM BLOG) -->
                 <article>
@@ -93,20 +103,20 @@
         <!--FOOTER É O RODAPÉ DE UM DOCUMENTO. NORMALMENTE É UTILIZADO PARA DESCREVER INFORMAÇÕES DE AUTORIA, COMO NOME E CONTATO DO AUTOR, E DATA DE CRIAÇÃO DO CONTEÚDO-->
         <footer>
             <p>Fale Conosco</p>
-            <img src="/img/tel.png" alt="">
-            <img src="/img/zap.png" alt="">
+            <img src="/img/tel.png" alt="ícone Telefone">
+            <img src="/img/zap.png" alt="Ícone WhatsApp">
             <p>(73) 9 1111-0000</p>
             <p>(Segunda a Sexta 8h às 13h e 14h às 18h)</p>
-            <img src="/img/email.png" alt="">
+            <img src="/img/email.png" alt="Ícone Cartão">
             <p>contato@cutpet.com.br</p>
             <p>Opções de Pagamento</p>
-            <img src="/img/card.png" alt="">
-            <img src="/img/fetlock.png" alt="">
-            <img src="/img/paypal.png" alt="">
+            <img src="/img/card.png" alt="Ícone Cartão">
+            <img src="/img/fetlock.png" alt="ícone Recebimento em Espécie - boleto">
+            <img src="/img/paypal.png" alt="ícone PayPal">
             <p>&copyCopyright 2021 Cute Pet</p>
             <img src="" alt="">
-            <img src="/img/logo.png" alt="">
-            <img src="/img/footer.jpg" alt="">
+            <img src="/img/logo.png" alt="Logo Cute Pet">
+            <img src="/img/footer.jpg" alt="Imagem fundo amarelo com um cão e um gato.">
         </footer>                  
     </body>
 </html>
