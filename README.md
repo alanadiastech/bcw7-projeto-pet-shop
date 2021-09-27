@@ -1,4 +1,6 @@
-# Pet Shop Cute Pet
+# Pet Shop Cute Pet 
+<img src="https://www.imagemhost.com.br/images/2021/09/27/logof24efa7bf2458167.png" alt="logof24efa7bf2458167.png" border="0" />
+
 ## Etapa 1:
 
 Escopo: Criar páginas com extensão HTML, utilizando o máximo possível de tags ou marcadores vistos nas aulas.
