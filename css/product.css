@@ -1,0 +1,373 @@
+/*Zerando 0s estilos pré defnidas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    background: rgb(255, 0, 179);
+    width: 100%;
+    height: 60px;
+}
+
+header img{
+    border-radius: 40%;
+    margin: 1em;
+}
+
+/*Cabeçalho - navegação*/
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .item1, .item2{
+    display: flex;
+    height: min-content;
+}
+
+.icon1, .icon2{
+    position: relative;
+    padding: 1em;
+ }
+
+ .icon1 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+ }
+
+ .nav1{
+    display: flex;
+    position: relative;
+    margin: -3.3em 0 0 50em;
+}
+
+.icon2 img{
+    width: 30px;
+    height: 30px;
+}
+
+.nav2{
+    position:absolute;
+    margin: -45.7em 0 0 70em;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+}
+
+.nav3{
+   display: flex;
+   height: 60px;
+   width: 100%;
+   background-color: rgb(255, 255, 0);
+   margin-top: -41em;
+}
+
+.nav3 ul li{
+   display: inline-flex;
+}
+
+.nav3 ul li a{
+    text-decoration: none;
+    padding: 1em;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
+.item3{
+    position: absolute;
+    width: 100%;
+    display: inline;
+    margin: 0 43em;
+}
+
+.nav3 .item3 a {
+    font-size: 22px;
+    font-family: Helvetica;
+}
+
+.nav3 .item3 a:hover{
+    color: rgb(255, 0, 179);
+    text-decoration: underline;
+}
+
+.item3-1{
+    position: absolute;
+    display: flex;
+    margin: 5em 47em;
+}
+
+.title-dog, .title-cat{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.title-dog a, .title-cat a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.title-dog{
+    position: absolute;
+    margin: 8em 20em;
+}
+
+.title-cat{
+    position: absolute;
+    margin: 8em 45em;
+}
+
+.item3-2{
+    width: 100%;
+    margin:  14em 22em;
+    columns: 2;
+}
+
+.item3-3{
+    position: relative;
+    width: 100%;
+    margin: 14em 0 0 -26em;
+    columns: 2;
+}
+
+.item3-2 ul li a, .item3-3 ul li a{
+    font-family: Helvetica;
+}
+
+.item3-2 ul li a:hover, .item3-3 ul li a:hover, .title-dog a:hover, .title-cat a:hover{
+    color: rgb(255, 255, 0);
+}
+
+/*Pesquisa*/
+#search1{
+    width: 300px;
+    height: 30px;
+    border: 4px solid rgb(255, 255, 0);
+    border-radius: 5px;
+    padding: 1em 1.5em ;
+    background-color: transparent;
+    justify-content: center;
+}
+
+#search1::-webkit-input-placeholder{
+    color: black;
+    font-size: 14px;
+    padding-left: 1em;
+}
+
+.item4{
+    position: absolute;
+    margin: -9em 22em;
+}
+
+.item4 img{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin: .5em .5em;
+}
+
+.enviar{
+    display: flex;
+    position: relative;
+    width: 10%;
+    margin: -2.3em 18em;
+    background: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: .2em ;
+}
+
+form{
+    background: rgba(255, 0, 179, .3);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 300px;
+    margin-top: 1em;
+}
+
+/*Produtos*/
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    border: 5px double rgb(0, 0, 0);
+    width: 45%;
+    padding: 1em;
+    margin: 1em ;
+}
+
+section{
+    position: absolute;
+    margin-top: 5em;
+}
+
+.item figcaption{
+    position: absolute;
+    width: 40%;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.item figure{
+    text-align: center;
+}
+
+.item img{
+    margin-top: 5em;
+}
+
+.item p{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+label{
+    font-size: 18px;
+    font-family: Helvetica;
+    display: block;
+}
+
+select, input{
+   width: 50%; 
+   padding: .3em;
+   margin: .3em;
+   border: 3px solid;
+}
+
+option, ::-webkit-input-placeholder{
+    font-size: 18px;
+}
+
+.item-1{
+    margin: 1em;
+    border: 3px solid;
+    border-radius: 15px;
+    padding: .3em;
+    cursor: pointer;
+}
+
+button{
+    width: 30%;
+    padding: .5em;
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 0, 179);
+    color: rgb(255, 255, 0);
+    cursor: pointer;
+    margin: 2em 10em;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 0);
+    color: rgb(255, 0, 179);
+}
+
+.top{
+    margin: 0 22em;
+}
+
+.top:hover{
+    background: rgb(255, 255, 0);
+    border-radius: 20%;
+}
+
+/*Rodapé da página*/
+footer{
+    background-color: rgba(255, 255, 0, .6);
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.icon3-1, .icon3-2, .icon3-3{
+    width: 30px;
+    height: 30px;
+}
+
+.footer1{
+     position: absolute;
+     margin: 5em 8em;
+}
+
+.footer1 p, .footer3 p{
+    font-family: Helvetica;
+}
+
+.footer1 h4, .footer2 h4{
+    font-size: 22px;
+    font-family: cursive;
+}
+
+.tel{
+    position: absolute;
+    width: 100%;
+    margin: -1.5em 4em ;
+    font-size: 18px;
+}
+
+.email{
+    position: absolute;
+    margin: 2em;
+    font-size: 18px;
+}
+
+.icon3-1, .icon3-2{
+    margin-top: 2em;
+}
+
+.icon3-3{
+    margin-top: 2em;
+}
+
+.footer2{
+    position: absolute;
+    width: 100%;
+    margin: 5em 70em;
+}
+
+.icon4{
+    margin: 1em;
+}
+
+.footer3 p{
+    position: absolute;
+    margin: 25em 35em;
+    font-size: 18px;
+}
+
+.logo-footer img{
+    position: absolute;
+    margin: 8em 40em;
+    border-radius: 40%;
+}
+

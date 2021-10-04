@@ -5,112 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cute Pet - Contato</title>
+    <link rel="stylesheet" href="/css/contact.css">
 </head>
-    <body>
-        <header>
-        <!--HEADER (CABEÇA DO DOCUMENTO) PODE INSERIR TÍTULOS, IMAGENS, PARÁGRAFOS, NAVEGAÇÃO (TODOS OS ELEMENTOS QUE COMPÕEM O TOPO)-->
-            <img src="/img/logo.png" alt="Logo Cute Pet">
-            <h1>Contato</h1>
-        </header>
-        <nav>
-        <!--O ELEMENTO <NAV> É UTILIZADO PARA REPRESENTAR UM AGRUPAMENTO DE LINKS DE NAVEGAÇÃO
-        A TAG <UL> DEFINE UMA LISTA NÃO ORDENADA
-        O ATRIBUTO GLOBAL TITLE CONTÉM TEXTOS REPRESENTANDO INFORMAÇÕES DE ORIENTAÇÃO, RELACIONADOS AO ELEMENTO A QUE PERTENCE
-        O ELEMENTO HTML <IMG> REPRESENTA A INSERÇÃO DE IMAGEM NO DOCUMENTO
-        DEFINIÇÃO DE TÍTULO PARA OS ÍCONES DAS REDES SOCIAIS COM O ELEMENTO TITLE-->
-            <ul>
-                <li><a href="#"></a><img src="/img/instagram.png" alt="Ícone Instagram" title="Instagram"></li>
-                <li><a href="#"><img src="/img/facebook.png" alt="Ícone Facebook" title="Facebook"></a></li>
-                <li><a href="#"><img src="/img/whatsapp.png" alt="Ícone WhatsApp" title="WhatsApp"></a></li>
-            </ul>
+<body>
+    <!--HEADER (CABEÇA DO DOCUMENTO) PODE INSERIR TÍTULOS, IMAGENS, PARÁGRAFOS, NAVEGAÇÃO (TODOS OS ELEMENTOS QUE COMPÕEM O TOPO)-->
+    <header>
+        <img src="/img/logo-yellow.png" alt="Logo Cute Pet">
+    </header>
+    <!--O ELEMENTO <NAV> É UTILIZADO PARA REPRESENTAR UM AGRUPAMENTO DE LINKS DE NAVEGAÇÃO
+    A TAG <UL> DEFINE UMA LISTA NÃO ORDENADA
+    O ATRIBUTO GLOBAL TITLE CONTÉM TEXTOS REPRESENTANDO INFORMAÇÕES DE ORIENTAÇÃO, RELACIONADOS AO ELEMENTO A QUE PERTENCE
+    O ELEMENTO HTML <IMG> REPRESENTA A INSERÇÃO DE IMAGEM NO DOCUMENTO
+    DEFINIÇÃO DE TÍTULO PARA OS ÍCONES DAS REDES SOCIAIS COM O ELEMENTO TITLE-->
+    <nav class="nav1">
+        <div class="container">
+            <div class="flex-item item1">
+                <a href="https://beacons.page/alanadiastech" target="_blank" class="icon1"><img src="/img/instagram.png" alt="Ícone Instagram" title="Instagram"></a>
+                <a href="https://beacons.page/alanadiastech" target="_blank" class="icon1"><img src="/img/facebook.png" alt="Ícone Facebook" title="Facebook" ></a>
+                <a href="https://beacons.page/alanadiastech" target="_blank" class="icon1"><img src="/img/whatsapp.png" alt="Ícone WhatsApp" title="WhatsApp" ></a>                 
+            </div>
+        </nav>      
+        <nav class="nav2">
+            <div class="flex-item item2">
+                <a href="#" class="icon2"><img src="/img/user.png" alt="Ícone Usuário">Minha Conta</a>
+                <a href="#" class="icon2"><img src="/img/cart.png" alt="ícone Carrinho">Meu Carrinho</a>
+            </div>
         </nav>
-        <nav>
-            <ul>
-                <li><a href="#"><img src="/img/user.png" alt="Ícone Usuário">Minha Conta</a></li>
-                <li><a href="#"><img src="/img/cart.png" alt="Ícone Carrinho">Meu Carrinho</a></li>
-            </ul>
-        </nav>
-        <nav> 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Produtos</a></li>
-                <li><a href="#dog1">Cachorro</a></li>
-                <ul>                
-                    <li><a href="#dog2">Coleiras com Identificação</a></li>
-                    <li><a href="#dog3">Pingentes com Identificação</a></li>
+        <nav class="nav3">
+            <div class="flex-item item3">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/html/product-dog.html">Produtos</a></li>
                 </ul>
-                <li><a href="#cat1">Gato</a></li>
-                <ul>                
-                    <li><a href="#cat2">Coleiras com Identificação</a></li>
-                    <li><a href="#cat3">Pingentes com Identificação</a></li>
-                </ul>
-            </ul>
-        </nav>
+            </div>
         <!--<INPUT TYPE="SEARCH"> DEFINE UM CAMPO DE TEXTO PARA INSERIR UMA SEQUÊNCIA DE PESQUISA
         A TAG <FORM> É USADA PARA CRIAR UM FORMULÁRIO HTML PARA ENTRADA DO USUÁRIO-->
-        <form>
-            <input type="text" id="search1" placeholder="Buscar..."/>
-            <input type="submit">
-            <img src="/img/search.png" alt="ícone Lupa">
-        </form>  
+            <form>
+                <div class="container">
+                <!--CAIXA DE PESQUISA-->
+                    <div class="flex-item item0">
+                        <input type="text" id="search1" placeholder="Buscar..."/>
+                        <input type="submit" class="enviar">
+                        <img src="/img/search.png" alt="ícone Lupa" class="icon6">
+                    </div>
+                </div>
+            </form>
         <!--A TAG <FIELDSET> AGRUPA ELEMENTOS RELACIONADOS, DESENHANDO UMA CAIXA EM TORNO DOS ELEMENTOS RELACIONADOS-->
-        <form>
-            <fieldset>
-                <legend>Como o Cute Pet pode te ajudar hoje?</legend>
-                <p>
-                    <input type="text" id="name" placeholder="Nome Completo">
-                </p>
-                <p>
-                    <input type="email" id="email1" placeholder="Email">
-                </p>
-                <p>
-                    <input type="tel" id="tel1" placeholder="Telefone">
-                </p>
-                <br>
-                <!--A TAG <LABEL> DEFINIU UMA LEGENDA PARA O ATRIBUTO FOR-->
-                    <label for="ageGroup">Assunto:</label><br/><br/>
-                    <input type="radio" id="subject1" name="subject" value="coleiras">Coleiras<br/>
-                    <input type="radio" id="subject2" name="subject" value="pingentes">Pingentes<br/>
-                    <input type="radio" id="subject1" name="subject" value="entrega">Entrega<br/>
-                    <input type="radio" id="subject2" name="subject" value="troca">Troca<br/>
-                    <input type="radio" id="subject1" name="subject" value="devolução">Devolução<br/>
-                    <input type="radio" id="subject2" name="subject" value="outro">Outro:<br/>
-                    <input type="text" id="other1" placeholder="Especifique">
-                    <p><label for="option">Preferência de Atendimento:</label></p>
-                    <input type="radio" id="option1" name="option" value="whatsApp">WhatsApp<br/>
-                    <input type="radio" id="option2" name="option" value="email">Email<br/>
-                    <input type="radio" id="option3" name="option" value="telfone">Telefone<br/>
-                    <label for="shift">Selecione o Período</label>
-                    <!--O ELEMENTO <SELCT> CRIOU UMA LISTA DE DROP-DOWN
-                    O ELEMENTO ANINHADO DENTRO DO <OPTION> ELEMENTO DEFINIU UMA OPÇÃO NO MENU SELECIONÁVEL-->
-                        <select name="shift" id="shift1">
-                            <option value="Turnos">Turnos</option>
-                            <option value="morning">Manhã</option>
-                            <option value="afternoon">Tarde</option>
-                            <option value="night">Noite</option>
-                        </select>
-                    <p><textarea name="text" id="message" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea></p>
-                    <p><input type="file"></p> 
-                    <button type="submit">Enviar</button>  
-                    <button type="reset">Limpar dados</button>               
-            </fieldset>
-        </form>
-        <!--FOOTER É O RODAPÉ DE UM DOCUMENTO. NORMALMENTE É UTILIZADO PARA DESCREVER INFORMAÇÕES DE AUTORIA, COMO NOME E CONTATO DO AUTOR, E DATA DE CRIAÇÃO DO CONTEÚDO-->
-        <footer>
-            <p>Fale Conosco</p>
-            <img src="/img/tel.png" alt="Ícone Telefone">
-            <img src="/img/zap.png" alt="Ícone WhatsApp">
-            <p>(73) 9 1111-0000</p>
-            <p>(Segunda a Sexta 8h às 13h e 14h às 18h)</p>
-            <img src="/img/email.png" alt="ícone Carta">
-            <p>contato@cutpet.com.br</p>
-            <p>Opções de Pagamento</p>
-            <img src="/img/card.png" alt="Ícone Cartão">
-            <img src="/img/fetlock.png" alt="ícone Recebimento em Espécie - boleto">
-            <img src="/img/paypal.png" alt="Ícone PayPal">
-            <p>&copyCopyright 2021 Cute Pet</p>
-            <img src="" alt="">
-            <img src="/img/logo.png" alt="Logo Cute Pet">
-        </footer>                  
+            <!--FORMULÁRIo-->
+            <form class="form2">
+                <fieldset>
+                    <legend>Como o Cute Pet pode te ajudar hoje?</legend>
+                    <div class="flex-container">
+                        <div class="item item01">            
+                            <input type="text" id="name" placeholder="Nome Completo">
+                            <input type="email" id="email1" placeholder="Email">
+                            <input type="tel" id="tel1" placeholder="Telefone">
+                        </div>
+                        <!--A TAG <LABEL> DEFINIU UMA LEGENDA PARA O ATRIBUTO FOR-->
+                        <div class="item item02">
+                            <label for="ageGroup" >Assunto:</label>
+                            <input type="radio" id="subject1" name="subject" value="coleiras"><p>Coleiras</p>
+                            <input type="radio" id="subject2" name="subject" value="pingentes"><p>Pingentes</p>
+                            <input type="radio" id="subject3" name="subject" value="entrega"><p>Entrega</p>
+                            <input type="radio" id="subject4" name="subject" value="troca"><p>Troca</p>
+                            <input type="radio" id="subject4" name="subject" value="devolucao"><p>Devolução</p>                                                         
+                            <input type="radio" id="subject5" name="subject" value="outro"><p>Outro:</p>
+                            <input type="text" id="other1" placeholder="Especifique">
+                        </div>
+                        <div class="item item03"> 
+                            <label for="option">Preferência de Atendimento:</label>
+                            <input type="radio" id="option1" name="option" value="whatsApp"><p>WhatsApp</p>
+                            <input type="radio" id="option2" name="option" value="email"><p>Email</p>
+                            <input type="radio" id="option3" name="option" value="telfone"><p>Telefone</p>
+                        </div>
+                        <div class="item item04">
+                            <label for="shift">Selecione o Período</label>
+                            <!--O ELEMENTO <SELCT> CRIOU UMA LISTA DE DROP-DOWN
+                            O ELEMENTO ANINHADO DENTRO DO <OPTION> ELEMENTO DEFINIU UMA OPÇÃO NO MENU SELECIONÁVEL-->
+                            <select name="shift" id="shift1">
+                                <option value="selecione">Selecione</option>
+                                <option value="Turnos">Turnos<option> 
+                                <option value="morning">Manhã</option>
+                                <option value="afternoon">Tarde</option>
+                                <option value="night">Noite</option>
+                            </select>
+                        </div>
+                            <div class="item item05">
+                                <textarea name="text" id="message" placeholder="Digite sua mensagem" cols="60" rows="10"></textarea></p>
+                                </div>
+                                <div class="item item06">
+                                <input type="file">
+                                <button type="submit">Enviar</button><button type="reset">Limpar Dados</button>             
+                             </div>
+                        </div>
+                    </div>              
+                </fieldset>
+            </form>           
+            <footer>
+                <!--RODAPÉ DA PÁGINA --> 
+                <div class="footer1">
+                    <h4>Fale Conosco</h4>
+                    <img src="/img/tel.png" alt="ícone Telefone" class="icon3-1">
+                    <img src="/img/zap.png" alt="Ícone WhatsApp" class="icon3-2">
+                    <p class="tel">(73) 9 1111 0000</p>
+                    <p class="hour">(Segunda a Sexta 8h às 13h e 14h às 18h)</p>    
+                    <p class="email">contato@cutpet.com.br</p>  
+                    <img src="/img/email.png" alt="Ícone Cartão" class="icon3-3">
+                </div>
+                <div class="footer2">
+                    <h4>Opções de Pagamento</h4>
+                    <img src="/img/card.png" alt="Ícone Cartão" class="icon4">
+                    <img src="/img/fetlock.png" alt="ícone Recebimento em Espécie - boleto" class="icon4">
+                    <img src="/img/paypal.png" alt="ícone PayPal" class="icon4">
+                </div>
+                <div class="footer3">
+                    <p>&copyCopyright 2021 Cute Pet</p>
+                    <div class="logo-footer">
+                        <img src="/img/logo.png" alt="Logo Cute Pet">
+                    </div>
+                </div>
+        </footer>                          
     </body>
 </html>
