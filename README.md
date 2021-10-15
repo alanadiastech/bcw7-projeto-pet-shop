@@ -17,4 +17,10 @@ RF[03]: A segunda página conterá informações, imagens, músicas, texturas, e
 
 RF[04]: A terceira página terá um formulário de contato com nome, telefone, e-mail, cidade, estado, assunto, mensagem, botão enviar e limpar.
 
+## Etapa 2:
+
+Escopo: Usar CSS3 com o máximo de estilização possível.
+
+
+
 
