@@ -9,12 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2? família=Kurale&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="/img/icon.ico">
 </head>
     <body>
-        <!--HEADER (CABEÇA DO DOCUMENTO) PODE INSERIR TÍTULOS, IMAGENS, PARÁGRAFOS, NAVEGAÇÃO (TODOS OS ELEMENTOS QUE COMPÕEM O TOPO)-->
-        <header>
-            <!--SLIDE-->
-            <div class="content">
+        <header><!--SLIDE-->
+            <section class="content">
                 <div class="slides">
                     <input type="radio" name="slide" id="slide1" checked>
                     <input type="radio" name="slide" id="slide2">
@@ -35,68 +34,50 @@
                     <label class="bar" for="slide2"></label>
                     <label class="bar" for="slide3"></label>
                 </div>
-            </div>              
-        </header>
-        <!--O ELEMENTO <NAV> É UTILIZADO PARA REPRESENTAR UM AGRUPAMENTO DE LINKS DE NAVEGAÇÃO
-        A TAG <UL> DEFINE UMA LISTA NÃO ORDENADA
-        O ATRIBUTO GLOBAL TITLE CONTÉM TEXTOS REPRESENTANDO INFORMAÇÕES DE ORIENTAÇÃO, RELACIONADOS AO ELEMENTO A QUE PERTENCE
-        O ELEMENTO HTML <IMG> REPRESENTA A INSERÇÃO DE IMAGEM NO DOCUMENTO
-        DEFINIÇÃO DE TÍTULO PARA OS ÍCONES DAS REDES SOCIAIS COM O ELEMENTO TITLE-->
-        <nav class="nav1">
-            <!--NAVEGADORES (REDES SOCIAIS E PÁGINA)-->
-            <div class="container">
-                <div class="flex-item item1">
-                    <a href="https://beacons.page/alanadiastech" target="_blanck" class="icon1"><img src="/img/instagram.png" alt="Ícone Instagram" title="Instagram"></a>
-                    <a href="https://beacons.page/alanadiastech" target="_blanck" class="icon1"><img src="/img/facebook.png" alt="Ícone Facebook" title="Facebook"></a>
-                    <a href="https://beacons.page/alanadiastech" target="_blanck" class="icon1"><img src="/img/whatsapp.png" alt="Ícone WhatsApp" title="WhatsApp"></a>                 
-                </div>
-            </nav>      
-            <nav class="nav2">
-                <div class="flex-item item2">
-                    <a href="#" class="icon2"><img src="/img/user.png" alt="Ícone Usuário">Minha Conta</a>
-                    <a href="#" class="icon2"><img src="/img/cart.png" alt="ícone Carrinho">Meu Carrinho</a>
-                </div>
-            </nav>
-            <nav class="nav3">  
-                <div class="flex-item item3">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="/html/product-dog.html">Produtos</a></li>
-                        <li><a href="contact.html">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--<INPUT TYPE="SEARCH"> DEFINE UM CAMPO DE TEXTO PARA INSERIR UMA SEQUÊNCIA DE PESQUISA
-        A TAG <FORM> É USADA PARA CRIAR UM FORMULÁRIO HTML PARA ENTRADA DO USUÁRIO-->
-        <div class="container">
-            <!--LOGO COM HOVER-->
-            <div class="flex-item item4">
-                <p>Cute Pet</p>
-            </div>     
-        </div>
-        <form>
-            <div class="container">
-                <!--CAIXA DE PESQUISA-->
-                <div class="flex-item item5">
+            </section>           
+            <nav><!--MENU, ÍCONES NAVEGÁVEIS-->
+                <section id="container">
+                    <div class="box bar1">
+                        <ul>
+                            <li><a href="https://beacons.page/alanadiastech" target="_blanck" class="icon-bar01"><img src="/img/instagram.png" alt="Ícone Instagram" title="Instagram"></a></li>
+                            <li><a href="https://beacons.page/alanadiastech" target="_blanck" class="icon-bar01"><img src="/img/facebook.png" alt="Ícone Facebook" title="Facebook"></a></li>
+                            <li><a href="https://beacons.page/alanadiastech" target="_blanck" class="icon-bar01"><img src="/img/whatsapp.png" alt="Ícone WhatsApp" title="WhatsApp"></a></li>
+                        </ul>
+                    </div>
+                    <div class="box bar2">
+                        <ul>
+                            <li><a href="#" class="icon-bar02"><img src="/img/user.png" alt="Ícone Usuário">Minha Conta</a></li>
+                            <li><a href="#" class="icon-bar02"><img src="/img/cart.png" alt="ícone Carrinho">Meu Carrinho</a></li>
+                        </ul>
+                        <div class="box menu">
+                        <div class="menu1">
+                            <ul>
+                                <li><a href="index.html" class="menu01">Home</a></li>
+                                <li><a href="product.html" class="menu01">Produtos</a></li>
+                                <li><a href="contact.html" class="menu01">Contato</a></li>
+                            </ul>
+                        </div>
+                </section>
+            </nav> 
+            <form><!--CAIXA DE PESQUISA-->
+                <div class="box search">
                     <input type="text" id="search1" placeholder="Buscar..."/>
-                    <input type="submit" class="enviar">
-                    <img src="/img/search.png" alt="ícone Lupa" class="icon6">
+                    <input type="submit">
+                    <img src="/img/search.png" alt="ícone Lupa">
                 </div>
-            </div>
-        </form> 
-        <!--O ELEMENTO <MAIN> IDENTIFICA O CONTEÚDO PRINCIPAL DA PÁGINA (GERALMENTE É O CONTEÚDO ATRELADO AO TÍTULO) -->
-        <main class="container">
-            <!--O ELEMENTO <SECTION> SEPARA AS SEÇÕES / TÓPICOS DO DOCUMNTO-->
-            <section class="flex-item section">
-                <!--CONTEÚDO DA PÁGINA-->
+            </form>
+            <section class="box title">
+                <h1>Cute Pet</h1>
+            </section>                     
+        </header>
+        <main class="container"><!--CONTEÚDO PRINCIPAL-->
+            <section class="box1">
                 <h1>Institucional</h1>
-                <!--O ELEMENTO <ARTICLE> É USADO PARA ESCREVER TEXTOS QUE IDEPENDEM DE OUTROS PARA TER SENTIDO (EXEMPLO: ARTIGOS EM UM BLOG) -->
-                <article  class="flex-item article1">
-                <h2>Serviços</h2>
-                <p>Coleiras com Identificação e Pingentes de Identificação Exclusivos e Personalizados para cães e gatos.</p>  
+                <article  class="box1">
+                    <h2>Serviços</h2>
+                    <p>Coleiras com Identificação e Pingentes de Identificação Exclusivos e Personalizados para cães e gatos.</p>  
                 </article>
-                <article class="flex-item article2">
+                <article class="box1">
                     <h2>História</h2>
                     <p>Cute Pet foi criado da nossa grande preocupação pelos animais e do nosso desejo de sempre oferecer segurança e conforto!</p> 
                     <p>Inspirada na minha vira lata adotada (Docinho), seleionamos os nossos produtos com muito carinho e dedicação, onde buscamos a melhor qualidade e conforto para nossos clientes!</p> 
@@ -105,14 +86,14 @@
                     <p>Vocês são incríveis!</p>
                     <p>Alana Dias</p>
                 </article>
-                <article class="flex-item article3">
+                <article class="box1">
                     <h2>Política de Privacidade</h2>
                     <p>O Cute Pet tem compromisso com a privacidade e a segurança dos seus clientes e segue a legislação sobre Internet e Proteção de Dados (Lei nº 12.965/14).</p>
                     <p>As informações que você nos confia são utilizadas, exclusivamente, para facilitar o seu atendimento e com finalizade de concretizar as compras. Sendo que o cadastramento no site corresponde ao consentimento expresso quanto a coleta/uso/armazenamento/tratamento dos dados (inclusive pelos terceiros contratados pelo Cute Pet), podendo, inclusive, ser individualizados para fins estatísticos.
                     <p>O Cute Pet em nenhum momento tem acesso aos seus dados bancários ou de cartão de crédito. Os dados são enviados diretamente a operadora do cartão e NÃO ficam armazenados em nossos servidores.</p>
                     <p>Caso tenha alguma dúvida use um dos nossos canais de comunicação.</p>
                 </article>
-                <article class="flex-item article4">
+                <article class="box1">
                     <h2>Dados da Empresa</h2>
                     <p>CNPJ: 11.222.333/0001-00</p>
                     <p>RAZÃO SOCIAL: CUT PET LTDA</p> 
@@ -128,46 +109,52 @@
                 </article>
             </section>
         </main>
-            <!--O ELEMENTO ASIDE É UTILIZADO PARA CRIAR UM CONTEÚDO ADICIONAL OU DE APOIO AO CONTEÚDO PRINCIPAL -->
-        <aside class="flex-item aside1">
+        <aside class="box1 aside1"><!--INFORMAÇÕES SECUNDÁRIAS-->
             <h3>Porque usar coleira com identificação?</h3>
             <p>Um simples descuido é suficiente para seu Pet fugir, correto?</p> 
             <p>Por isso, é importante que seu Pet use a coleira com identificação em todos os momentos, até mesmo em casa, não só quando for passear na rua. É até mais prático para o tutor que o objeto fique sempre junto ao corpo do bichinho, até porque você não corre o risco de esquecer de colocá-lo.</p> 
             <p>Várias situações imprevisíveis podem acontecer, indepedente da qual seja, o importante é a prevenção. O recomendado é você checar se a placa de identificação está bem presa na coleira e se está adaptada ao pet para que ele fique confortável com ela e não queira tirá-la.</p>   
         </aside>
-        <aside class="flex-item aside2">
+        <aside class="box1 aside2">
             <h3>Depoimentos</h3> 
-            <p class="p1">Fofinho, todo lindo e identificado com seu pingente novo. 
-            Parabéns Cute Pet, amamos!</p>
-            <P class="p2">Linda e eu amamos a coleira com identificação. Minha filinha está mais segura. Muito obrigado!</P>
+            <p class="p1">"Fofinho, todo lindo e identificado com seu pingente novo. 
+            Parabéns Cute Pet, amamos!"</p>
+            <P class="p1">"Linda e eu amamos a coleira com identificação. Minha filinha está mais segura. Muito obrigado!"</P>
+            <p class="p1">"Agora, sinto mais segurança ao sair para passear com Princesa, minha gatinha. Além da identificação, o pingente é lindo!"</p>
+        </aside>  
+        <aside class="box1 aside3">
+            <img src="/img/promo.gif" alt="Gif promocional">
+            <a href="#">Acesse aqui</a>
+            <div class="clike">
+                <a href="#"><img src="/img/click.png" alt="Clique aqui" ></a>
+            </div>
         </aside>
-        <!--FOOTER É O RODAPÉ DE UM DOCUMENTO. NORMALMENTE É UTILIZADO PARA DESCREVER INFORMAÇÕES DE AUTORIA, COMO NOME E CONTATO DO AUTOR, E DATA DE CRIAÇÃO DO CONTEÚDO-->
-        <footer class="container">
-            <!--RODAPÉ DA PÁGINA-->
-            <div class="flex-item footer1">
+        <footer class="container"> <!--RODAPÉ DA PÁGINA-->
+            <section class="box3 footer1">
                 <h4>Fale Conosco</h4>
-                <img src="/img/tel.png" alt="ícone Telefone" class="icon3-1">
-                <img src="/img/zap.png" alt="Ícone WhatsApp" class="icon3-2">
+                <img src="/img/tel.png" alt="ícone Telefone" class="f1">
+                <a href="#"><img src="/img/zap.png" alt="Ícone WhatsApp" class="f2"></a>
                 <p class="tel">(73) 9 1111 0000</p>
                 <p class="hour">(Segunda a Sexta 8h às 13h e 14h às 18h)</p>    
                 <p class="email">contato@cutpet.com.br</p>  
-                <img src="/img/email.png" alt="Ícone Cartão" class="icon3-3">
-            </div>
-            <div class="flex-item footer2">
+                <img src="/img/email.png" alt="Ícone Carta" class="f3">
+            </section>
+            <section class="box3 footer2">
                 <h4>Opções de Pagamento</h4>
-                <img src="/img/card.png" alt="Ícone Cartão" class="icon4">
-                <img src="/img/fetlock.png" alt="ícone Recebimento em Espécie - boleto" class="icon4">
-                <img src="/img/paypal.png" alt="ícone PayPal" class="icon4">
-            </div>
-            <div class="flex-item footer3">
+                <img src="/img/card.png" alt="Ícone Cartão" class="f4">
+                <img src="/img/fetlock.png" alt="ícone Recebimento em Espécie - boleto" class="f5">
+                <img src="/img/paypal.png" alt="ícone PayPal" class="f6">
+            </section>
+            <section class="box3 footer3">
                 <p>&copyCopyright 2021 Cute Pet</p>
                 <div class="logo-footer">
                     <img src="/img/logo.png" alt="Logo Cute Pet">
                 </div>
-                <div class="img-footer">
-                    <img src="/img/footer.jpg" alt="Imagem fundo amarelo com um cão e um gato." >
-                </div>
-            </div>
-        </footer>                  
+            </section>
+            <section class="box3 footer4">
+                <a href="#"><img src="/img/facebook-footer.png" alt="Ícone Facebook"></a>
+                <a href="#"><img src="/img/instagram-footer.png" alt="Ícone Instagram"></a>
+            </section>
+        </footer>                     
     </body>
 </html>

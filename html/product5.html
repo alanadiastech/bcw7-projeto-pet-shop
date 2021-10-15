@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cute Pet - Contato</title>
-    <link rel="stylesheet" href="/css/contact.css">
+    <title>Cute Pet - Produto Selecionado</title>
+    <link rel="stylesheet" href="/css/goods.css">
     <link rel="shortcut icon" type="imagex/png" href="/img/icon.ico">
 </head>
     <body>
@@ -25,6 +25,7 @@
                             <ul>
                                 <li><a href="index.html" class="menu01">Home</a></li>
                                 <li><a href="product.html" class="menu01">Produtos</a></li>
+                                <li><a href="contact.html" class="menu01">Contato</a></li>
                             </ul>
                         </div>
                 </section>
@@ -37,52 +38,50 @@
                 </div>
             </form>                   
         </header>
-        <form class="form2">
-            <fieldset><!--FORMULÁRIO DE CONTATO-->
-                <legend>Como o Cute Pet pode te ajudar hoje?</legend>
-                <div class="flex-container">
-                    <div class="item item01">            
-                        <input type="text" id="name" placeholder="Nome Completo">
-                        <input type="email" id="email1" placeholder="Email">
-                        <input type="tel" id="tel1" placeholder="Telefone">
+        <section class="flex-container"><!--PRODUTO-->
+            <div class="item" id="dog1">
+                <section class="order1">
+                    <figure>
+                        <figcaption>Coleira Azul Marinho Estrelinhas com Pingente Inox</figcaption>
+                        <img src="/img/cat.png" alt="Cachorro com coleira de identificação">
+                    </figure>
+                    <p>R$ 59,90 ou 3x de R$ 19,97</p>
+                </section>
+                <section class="order2"> 
+                    <label for="measure">Tamanho da Coleira</label>
+                    <select name="measure" id="measure6">
+                        <option value="selecione">Selecione a medida</option>
+                        <option value="micro">Micro - até 4kg</option>
+                        <option value="pequeno">Pequeno - de 4k até 7kg</option>
+                        <option value="pequeno">Pequeno - de 7k até 12kg</option>
+                    </select>
+                    <label for="name"> Nome:</label>
+                    <input type="text" id="name1" placeholder="Nome do animal">
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" id="tel1" placeholder="(xx) x xxxx xxxx">
+                </section>
+                <section class="order3">          
+                    <p>Selecione o Modelo da Fonte de Letras</p>
+                    <div class="imgs">
+                        <img src="/img/model1.png" alt="Imagem com opção de fonte para grafia" class="item-1">
+                        <img src="/img/model2.png" alt="Imagem com opção de fonte para grafia" class="item-1">
+                        <img src="/img/model3.png" alt="Imagem com opção de fonte para grafia" class="item-1">
+                        <img src="/img/model4.png" alt="Imagem com opção de fonte para grafia" class="item-1">
                     </div>
-                    <div class="item item02">
-                        <label for="ageGroup">Assunto:</label>
-                        <input type="radio" id="subject1" name="subject" value="coleiras"><p>Coleiras</p>
-                        <input type="radio" id="subject2" name="subject" value="pingentes"><p>Pingentes</p>
-                        <input type="radio" id="subject3" name="subject" value="entrega"><p>Entrega</p>
-                        <input type="radio" id="subject4" name="subject" value="troca"><p>Troca</p>
-                        <input type="radio" id="subject4" name="subject" value="devolucao"><p>Devolução</p>                                                         
-                        <input type="radio" id="subject5" name="subject" value="outro"><p>Outro:</p>  
-                        <input type="text" id="other1" placeholder="Especifique">
-                    </div>
-                    <div class="item item03"> 
-                        <label for="option">Preferência de Atendimento:</label>
-                        <input type="radio" id="option1" name="option" value="whatsApp"><p>WhatsApp</p>
-                        <input type="radio" id="option2" name="option" value="email"><p>Email</p>
-                        <input type="radio" id="option3" name="option" value="telfone"><p>Telefone</p>
-                    </div>
-                    <div class="item item04">
-                        <label for="shift">Selecione o Período</label>
-                        <select name="shift" id="shift1">
-                            <option value="selecione">Selecione</option>
-                            <option value="Turnos">Turnos<option> 
-                            <option value="morning">Manhã</option>
-                            <option value="afternoon">Tarde</option>
-                            <option value="night">Noite</option>
-                        </select>
-                    </div>
-                        <div class="item item05">
-                            <textarea name="text" id="message" placeholder="Digite sua mensagem" cols="60" rows="10" maxlength="2000"></textarea></p>
-                        </div>
-                        <div class="item item06">
-                            <input type="file">
-                            <button type="submit">Enviar</button><button type="reset">Limpar Dados</button>             
-                        </div>
-                    </div>
-                </div>              
-            </fieldset>
-        </form>          
+                </section>
+                <section class="order4">
+                    <img class="background" src="/img/background.png" alt="">
+                    <figure>
+                        <a href="#"><legend>Quem comprou esse produto 
+                            também gostou:
+                            Pingente de Identificação
+                            em Aço Inox Formato de Osso Liso</legend>
+                        <img src="/img/dog.png" alt=""></a>
+                    </figure>
+                </section>   
+                <button type="submit">Comprar</button>   
+            </div>
+        </section>    
         <footer class="container"> <!--RODAPÉ DA PÁGINA-->
             <section class="box3 footer1">
                 <h4>Fale Conosco</h4>

@@ -1,17 +1,24 @@
+ /*Estilo da página Home*/
+
 /*Zerando 0s estilos pré defnidas*/
+
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0; 
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-/*Cabeçalho - slides*/
+body{
+    overflow-x: hidden;
+}
+
 header{
     width: 100%;
     height: 100%;
-   
 }
+
+/*Configurações do header - slides*/
 
 .content{
     position: absolute;
@@ -76,283 +83,798 @@ header{
     margin-left: -40%;
 }
 
-/*Cabeçalho - navegação*/
-.container{
-    height: 100vh;
-    width: 100%;
+#container{
     display: flex;
- }
-
- .flex-item{
-     flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
- .item1, .item2{
+/*Configurações do header - menu*/
+
+.box{
     display: flex;
-    height: min-content;
+    flex-direction: column;
+    align-items: center;
 }
 
-.item1{
-    margin-left: 6em;
-    height: 30px;
-    width: 0;
-}
-
-.icon1, .icon2{
+.box ul li{
+    display: inline;
     position: relative;
-    padding: 1em;
- }
+}
 
- .icon1 img{
+.box a{
+    text-decoration: none;
+}
+
+.bar1{
+    position: absolute;
+    margin: 1em 6em;
+    word-spacing: 1em;
+}
+
+.bar1 img{
     width: 30px;
     height: 30px;
     border-radius: 50%;
- }
-
- .nav1{
-     background:rgb(255, 255, 0);
-     margin: 0 0 0 6.8em;
-     height: 50px ;
-     width: 85.5%;
-     border-bottom-left-radius: 25px;
-     border-bottom-right-radius: 25px;
-     display: flex;  
-     position: absolute;
 }
 
-.icon2 img{
+.bar2{
+    width: 100%;
+    position: absolute ;
+    margin: 1em 28em;
+}
+
+.bar2 img{
+    position: relative;
     width: 30px;
-    height: 30px;
+    height: 30px; 
 }
 
-.nav2{
-    position: relative;
-    margin: 0 0 0 62em;
-}
-
-.nav2 a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: Helvetica;
-}
-
-.nav3{
-    background:rgb(255, 255, 254);
-    position: absolute; 
-    margin: 7em 0 0 6.9em;
-    height: 60px;
-    width: 85.4%;
-    justify-content: right;
-    padding: 0 0 0 53em;
-}
-
-.nav3 ul li{
-    display: inline-flex;
-}
-
-.nav3 ul li a{
-    text-decoration: none;
-    padding: 1.3em 2em 0 2em;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    font-family: Helvetica;
-    font-weight: 700;
-}
-
-.item4, .item5{
-    position: relative;
-    margin: 7em 0 0 25em;
-}
-
-.item4 p{
-    font-family: 'Kurale', serif;
-    font-size: 50px;
-    font-weight: bold;
-    transition: .5s all;
-}
-
-.item4 p:hover{
-    color: rgb(255, 255, 0);
-    background-color:rgb(255, 0, 179);
-    border-radius: 10px;
-}
-
-.item5{
-    margin: -49em 38em;
-    position: absolute;
-}
-
-#search1{
-    width: 300px;
-    height: 30px;
-    border: 4px solid rgb(255, 0, 179);
-    border-radius: 5px;
-    padding: 1em 1.5em ;
-    background-color: transparent;
-    justify-content: center;
-}
-
-#search1::-webkit-input-placeholder{
-    color: black;
+.bar2 a{
     font-size: 14px;
-    padding-left: 1em;
+    font-family: Helvetica;
+    color: rgb(0, 0, 0);
+    padding: 1em;
 }
 
-.item5 img{
-    display: flex;
-    width: 15px;
-    height: 15px;
-    margin: .5em .5em;
-}
-
-.enviar{
-    display: flex;
+.menu{
+    width: 100%;
+    height: 60px;
     position: relative;
-    margin: -2em 18em;
-    background: rgb(255, 0, 179);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    padding: .2em;
+    justify-content: center;
+    padding-left: 40em;
+    margin: 8em 0 0 -55.9em;
+    background-color: rgb(255, 255, 255);
 }
 
-/*Conteúdo da página*/
-.section{
-    width: 50%;
-    display: block;
-    margin: -45em 7em;
-    padding: 1em;
-    text-align: justify;
-}
-
-.section h1{
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
-.section h1, h2, .aside1 h3, .aside2 h3{
-    text-align: center;
-    margin: 1em  0 1em;
-    font-family: cursive;
-}
-
-.section p, .aside1 p, .aside2 p{
-    font-family: Helvetica;
+.menu a {
+    padding: 0 2em;
+    color: rgb(0, 0, 0);
     font-size: 18px;
-    line-height: 1.5;
-    text-align: left;
-}
-
-aside{
-    width: 33.3%;
-    background: rgba(255, 0, 179, 0.027);
-    border-radius: 20px;
-    padding: 1em;
-}
-
-.aside1{ 
-    position: absolute; 
-    display:block;
-    margin: -80em 55em;
-    padding: 1em;
-  }
-
-  .aside2{
-      position: absolute;
-      display: block;
-      margin: -50em 55em;
-  }
-
-  .aside2 p{
-    text-align: center;
-    padding: 1em 4em 1em 4em;
-}
-
-.p1, .p2{
-    border: 5px double rgb(255, 255, 0);
-    margin: 1em 0 1em;
-}
-
-/*Rodapé da página*/
-
-footer{
-    position: absolute;
-}
-
-.icon3-1, .icon3-2, .icon3-3{
-    width: 30px;
-    height: 30px;
-}
-
-.footer1{
-     position: absolute;
-     margin: 1em 10em;
-}
-
-.footer1 p{
     font-family: Helvetica;
+    font-weight: bold;
+    text-align: right;
 }
 
-.footer1 h4, .footer2 h4{
-    font-size: 22px;
-    font-family: cursive;
-}
-
-.tel{
+nav{
     position: absolute;
     width: 100%;
-    margin: -1.5em 4em ;
+    height: 60px;
+    margin: auto;
+    background-color: rgb(255, 255, 0);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/*Configurações do header - caixa de ppesquisa*/
+
+
+[type=text]{
+    height: 30px;
+    width: 20%;
+    position: absolute;
+    margin: 1em 0;
+    padding: .4em 2em;
+    border: 3px solid rgb(255, 0, 179);
+    border-radius: 25px;
+}
+
+[type=text]::-webkit-input-placeholder{
+    font-family: Helvetica;
+    color: rgb(0, 0, 0);
+}
+
+.search img{
+    position: relative;
+    width: 20px;
+    margin: -1.2em 15em 0 0;
+}
+
+[type=submit]{
+    position: relative;
+    width: 5%;
+    margin: 1.34em 0 0 14em;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 0, 179);
+    background-color: rgb(255, 0, 179);
+    cursor: pointer;
+    font-family: Helvetica;
+}
+
+.title h1{
+    position: relative;
+    margin: 2.7em 15em 0 0;
+    font-family: cursive;
+    font-size: 50px;
+    transition: .8s all;
+}
+
+.title h1:hover{
+    color: rgb(255, 0, 179);
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+/*Configurações do conteúdo principal*/
+
+
+main{
+    width: 50%;
+    margin: 30em 6em; 
+    text-align: justify;
+    border-radius: 25px;
+}
+
+main h1{
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+}
+
+main h2{
+    padding: 1em 0;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+main p{
+    width: 100%;
+    line-height: 1.6em;
+    margin: 0 12em 0 0;
+    margin-bottom: .8em;
+    font-family: Helvetica;
+}
+
+/*Configurações do sub-conteúdo lateral*/
+
+aside{
+    width: 35%;
+    padding: 0 2em;
+    border-radius: 25px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.aside1{
+    margin: -118em 50em;
+}
+
+.aside1 h3, .aside2 h3{
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.aside1 p, .aside2 p{
+    line-height: 1.6em;
+    text-align: center;
+    padding: 1em 0;
+    font-family: Helvetica;
+}
+
+.aside2{
+    margin: 118em 50em;
+  }
+
+.p1{
+    font-style: italic;
+    border: 2px solid rgb(255, 255, 1);
+    margin: 1em 2em;
+}
+
+.aside3{
+    margin: -118em 50em;
+    background: none;
+}
+
+.aside3 img{
+    border-radius: 25px;
+    
+}
+
+.aside3 a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Helvetica;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    text-align: center;
+}
+
+.clike img{
+    position: absolute;
+    margin: -2em 11em 0;
+}
+
+.aside1, .aside2,.aside3{
+    padding-bottom: 1em;
+}
+
+.box3{
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+/*Configurações do footer*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 140em;
+    background: rgb(250, 250, 250);
+    border-top-left-radius: 30px;
+    border-top-right-radius:  30px;
+    border-top: 2px solid yellow;
+}
+
+.footer1 h4{
+    position: absolute;
+    margin: 1em 8em;
+    font-family: cursive;
+    font-weight: 400;
     font-size: 18px;
 }
 
-.email{
+.footer1 .tel{
     position: absolute;
-    margin: 2em;
+    margin: 6em 7em;
+    padding: 1em;
+    font-family: Helvetica;
+}
+
+.footer1 .hour{
+    position: absolute;
+    margin: 8em 3em;
+    padding: 1em;
+    font-family: Helvetica;
+}
+
+.footer1 .email{
+    position: absolute;
+    margin: 15em 7em;
+    font-family: Helvetica;
+}
+
+.footer1 img{
+    width: 30px;
+    height: 30px;
+}
+
+.f1{
+    position: absolute;
+    margin: 4em 10em;
+}
+
+.f2{
+    position: absolute;
+    margin: 4em 12em ;
+}
+
+.f3{
+    position: absolute;
+    margin: 12em 11em;
+}
+
+.footer2 h4{
+    position: absolute;
+    width: 100%;
+    margin: 1em 55em;
+    font-family: cursive;
+    font-weight: 400;
     font-size: 18px;
 }
 
-.icon3-1, .icon3-2{
-    margin-top: 2em;
+.footer2 img{
+    width: 40px;
+    height: 40px;
 }
 
-.icon3-3{
-    margin-top: 2em;
-}
-
-.footer2{
+.f4{
     position: absolute;
-    margin: 18em 10em;
+    margin: 4em 63em;
 }
 
-.icon4{
- margin: 1em;
+.f5{
+    position: absolute;
+    margin: 4em 67em;
+}
+
+.f6{
+    position: absolute;
+    margin: 4em 71em;
+}
+
+.footer3 img{
+    position: absolute;
+    border-radius: 40%;
+    margin: 3em 35em;
 }
 
 .footer3 p{
     position: absolute;
-    margin: 64em 35em 0;
-    font-size: 18px;
-    color: rgb(255, 0, 179)
+    margin: 18em 35em;
+    font-family: Helvetica;
 }
 
-.img-footer img{
-    margin: 0  0 0 6.8em;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+.footer4{
+    margin: 12em 63.5em;
 }
 
-.logo-footer img{
-    position: absolute;
-    margin: 1em  0 0 73em;
-    border-radius: 40%;
+.footer4 img{
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 0, 179);
+    border-radius: 50%;
 }
 
+.footer4 img:hover{
+    background-color: rgb(255, 0, 179);
+    border-radius: 5px;
+}
 
+.footer4 a{
+    padding: 0 1em;
+}
 
+@media only screen and (max-width: 1286px){
+    body{
+        background-color: blue;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 769px){
+      body{
+          background-color: red;
+      }
 
+      .content{
+        display: none;
+    }
 
- 
+    header{
+        background: no-repeat url("/img/banner1.1.jpg");
+        top: 0;
+        position: absolute;
+        background-size: contain;
+        width: 150%;
+    }
 
+    #container{
+        width: 100%;
+        background-size: cover;
+    }
 
+    .bar1{
+        width: 30px;
+        margin: 15em auto;    
+    }
+    
+    .bar2{
+        margin: .5em 4em;
+    }
+    
+    .bar2 img, .bar1 img{
+        width: 20px;
+        height: 20px; 
+    }
+    
+    .bar2 a{
+        font-size: 10px;
+    }
+    
+    .menu{
+        background: none;            
+        padding: .1em;
+        text-align: center;
+        margin: .5em 8em 0 0;
+        position: absolute;   
+    }
 
+    .menu a {
+       font-size: 14px;
+    }
+    
+    /*Configurações do header - caixa de ppesquisa*/
+     
+    .search{
+        display: none;
+    }
+     
+    .title h1{
+        width: 110px;
+        margin-left: 6em;
+        bottom: 35.2em;
+        font-size: 20px;
+        position: absolute;
+        color: rgb(255, 0, 179) ;
+    }
+    
+    .title h1:hover{
+        color: rgb(0, 0, 0) ;
+    }
+    
+    /*Configurações do conteúdo principal*/
+
+    main{
+        width: 80%;
+        margin: 16em 3em 0 3em;    
+        text-align: left;     
+    } 
+
+    .box1{
+        font-size: 14px;
+    }
+    /*Configurações do sub-conteúdo*/
+
+    aside{
+        width: 100%;
+        padding: 0 2em;
+        position: absolute;
+        border: none;
+    }
+
+    .aside1{
+        margin: 3em auto;
+        width: 100%;
+    }
+
+    .aside2{
+        margin: 38em auto;
+        width: 100%;
+    }
+
+    .p1{
+        border-radius: 25px;
+    }
+
+    .aside3{
+        margin: 70em 6em;
+    }
+
+    .aside3 img{
+        border-radius: 25px;
+        height: 200px;
+        width: 200px;    
+    }
+
+    .aside3 a{
+        font-size: 18px;
+        padding: 1em;
+        margin-right: 8em;
+    }
+
+    .clike img{
+        margin: -2em 8em 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    /*Configurações do footer*/
+
+    footer{
+        top: 200em; 
+        height: 400px;
+        }
+
+    .footer1 h4{
+        margin: 1em;
+    }
+
+    .footer1 p{
+        font-size: 12px;
+    }
+
+    .footer1 .tel{
+        margin: 7em 1em;
+    }
+
+    .footer1 .hour{
+        margin: 9em 1em;
+    }
+
+    .footer1 .email{
+        margin: 14em 1.5em;
+    }
+
+    .footer1 img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .f1{
+        margin: 4em 2em;
+    }
+
+    .f2{
+        margin: 4em 4em ;
+    }
+
+    .f3{
+        margin: 9em 2em;
+    }
+
+    .footer2 h4{
+        margin: 12em 1em;    
+    }
+
+    .footer2 img, .footer4 img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .f4{
+        margin: 16em 1em;
+    }
+
+    .f5{
+        margin: 16em 4em;
+    }
+
+    .f6{
+        margin: 16em 7em;
+    }
+
+    .footer3 img{
+        width: 100px;
+        height: 100px;
+        margin: 1em 18em;
+    }
+
+    .footer3 p{
+        margin: 22em 7em;       
+    }
+
+    .footer4{
+        margin: 14em 16em;
+        
+    }
+   
+  }
+  
+  @media only screen and (max-width: 360px){
+    /*Configurações do header - banner, navegação*/
+
+    .content{
+        display: none;
+    }
+
+    body{
+        background-color: yellow;
+        
+    }
+
+    header{
+        background: no-repeat url("/img/banner1.1.jpg");
+        top: 0;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    #container{
+        width: 100%;  
+      }
+
+    .bar1{
+        width: 30px;
+        margin: 13em  auto;    
+    }
+    
+    .bar2{
+        margin: .5em 4em;
+    }
+    
+    .bar2 img, .bar1 img{
+        width: 20px;
+        height: 20px; 
+    }
+    
+    .bar2 a{
+        font-size: 10px;
+    }
+    
+    .menu{
+        background: none;            
+        padding: .1em;
+        text-align: center;
+        margin: .5em 8em 0 0;
+        position: absolute;   
+    }
+
+    .menu a {
+       font-size: 14px;
+    }
+    
+    /*Configurações do header - caixa de ppesquisa*/
+     
+    .search{
+        display: none;
+    }
+     
+    .title h1{
+        width: 110px;
+        margin-left: 6em;
+        bottom: 30.5em;
+        font-size: 20px;
+        position: absolute;
+        color: rgb(255, 0, 179) ;
+    }
+    
+    .title h1:hover{
+        color: rgb(0, 0, 0) ;
+    }
+    
+    /*Configurações do conteúdo principal*/
+
+    main{
+        width: 90%;
+        margin: 18em 10em 0 2em;    
+        text-align: left;
+        overflow: hidden;     
+    } 
+
+    .box1{
+        font-size: 14px;
+    }
+
+    /*Configurações do sub-conteúdo*/
+
+    aside{
+        width: 100%;
+        padding: 0 2em;
+        position: absolute;
+        border: none;
+    }
+
+    .aside1{
+        margin: 3em auto;
+        width: 100%;
+    }
+
+    .aside2{
+        margin: 38em auto;
+        width: 100%;
+    }
+
+    .p1{
+        border-radius: 25px;
+    }
+
+    .aside3{
+        margin: 70em 3em;
+    }
+
+    .aside3 img{
+        border-radius: 25px;
+        height: 200px;
+        width: 200px;    
+    }
+
+    .aside3 a{
+        font-size: 18px;
+        padding: 1em;
+        margin-right: 7em;
+    }
+
+    .clike img{
+        margin: -2em 7em 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    /*Configurações do footer*/
+
+    footer{
+        top: 200em; 
+        height: 300px;
+        overflow: hidden;
+        width: 105%;
+        }
+
+    .footer1 h4{
+        margin: 1em;
+    }
+
+    .footer1 p{
+        font-size: 12px;
+    }
+
+    .footer1 .tel{
+        margin: 7em 1em;
+    }
+
+    .footer1 .hour{
+        margin: 9em 1em;
+    }
+
+    .footer1 .email{
+        margin: 14em 1.5em;
+    }
+
+    .footer1 img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .f1{
+        margin: 4em 2em;
+    }
+
+    .f2{
+        margin: 4em 4em ;
+    }
+
+    .f3{
+        margin: 9em 2em;
+    }
+
+    .footer2 h4{
+        margin: 11em 1em;    
+    }
+
+    .footer2 img, .footer4 img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .f4{
+        margin: 15em 1em;
+    }
+
+    .f5{
+        margin: 15em 4em;
+    }
+
+    .f6{
+        margin: 15em 7em;
+    }
+
+    .footer3 img{
+        width: 100px;
+        height: 100px;
+        margin: 1em 16em;
+    }
+
+    .footer3 p{
+        margin: 22em 5em;       
+    }
+
+    .footer4{
+        margin: 14em 13em;
+        
+    }
+   
+  }
+  
+  

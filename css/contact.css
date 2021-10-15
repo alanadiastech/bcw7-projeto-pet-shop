@@ -1,4 +1,7 @@
-/*Zerando 0s estilos pré defnidas*/
+/*Estilo da página Contato*/
+
+/*Zerando os estilos pré defnidas*/
+
 *{
     margin: 0;
     padding: 0;
@@ -16,137 +19,115 @@ header{
     height: 60px;
 }
 
-header img{
+/*Configurações do header - navegação*/
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
     border-radius: 40%;
     margin: 1em;
 }
 
-/*Cabeçalho - navegação*/
-.container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
- }
-
- .item1, .item2{
-    display: flex;
-}
-
-.icon1, .icon2{
-    position: relative;
-    padding: 1em;
- }
-
- .icon1 img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
- }
-
- .nav1{
-    display: flex;
-    position: absolute;
-    margin: -3.3em 0 0 50em;
-}
-
-.icon2 img{
-    width: 30px;
-    height: 30px;
-}
-
-.nav2{
-    position:absolute;
-    margin: -3.3em 0 0 70em;
-}
-
-.nav2 a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: Helvetica;
-}
-
-.nav3{
-   display: flex;
-   height: 60px;
-   width: 100%;
-   background-color: rgb(255, 255, 0);
-   margin-top: 1em;
-}
-
-.nav3 ul li{
-   display: inline-flex;
-}
-
-.nav3 ul li a{
-    text-decoration: none;
-    padding: 1em;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    font-family: Helvetica;
-    font-weight: 700;
-}
-
-.item3{
-    position: absolute;
-    width: 100%;
+.box ul li{
     display: inline;
-    margin: 0 43em;
+    position: relative;
 }
 
-.nav3 .item3 a {
-    font-size: 22px;
+.box a{
+    text-decoration: none;
+}
+
+.bar1{
+    width: 100%;
+    margin: 0 0;
+    margin: 1em 0 0 28em;
+}
+
+.bar1 img{
+    width: 30px;
+    height: 30px; 
+}
+
+.bar1 a{
+    font-size: 14px;
+    font-family: Helvetica;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+}
+
+.menu{
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    margin-top: -.5em;
+    margin-right: 90em;
+    position: absolute;
+}
+
+.menu a {
+    padding: 2em;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: right;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    margin: -12em 0;
+    background-color: rgb(255, 255, 0);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/*Configurações do header - caixa de pesquisa*/
+
+.search [type=text]{
+    height: 30px;
+    width: 20%;
+    position: absolute;
+    margin: 11.5em 0 0 8em;
+    padding: .4em 3em;
+    border: 3px solid rgb(255, 0, 179);
+    border-radius: 25px;
+}
+
+[type=text]::-webkit-input-placeholder{
+    font-family: Helvetica;
+    color: rgb(0, 0, 0);
+}
+
+.search img{
+    position: relative;
+    width: 20px;
+    margin: -1.2em 8em 0 0;
+}
+
+.search [type=submit]{
+    position: relative;
+    width: 5%;
+    margin: 11.9em 0 0 22em;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 0, 179);
+    background-color: rgb(255, 0, 179);
+    cursor: pointer;
     font-family: Helvetica;
 }
 
-.nav3 .item3 a:hover{
-    color: rgb(255, 0, 179);
-    text-decoration: underline;
-}
+/*Configurações do formulário*/
 
-/*Pesquisa*/
-#search1{
-    width: 300px;
-    height: 30px;
-    border: 4px solid rgb(255, 255, 0);
-    border-radius: 5px;
-    padding: 1em 1.5em ;
-    background-color: transparent;
-    justify-content: center;
-}
-
-#search1::-webkit-input-placeholder{
-    color: black;
-    font-size: 14px;
-    padding-left: 1em;
-}
-
-.item0{
-    position: absolute;
-    margin: -3.4em 22em;
-}
-
-.item0 img{
-    display: flex;
-    width: 20px;
-    height: 20px;
-    margin: .6em .5em;
-}
-
-.enviar{
-    display: flex;
-    position: relative;
-    width: 10%;
-    margin: -2.1em 18em;
-    background: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    padding: .2em ;
-}
-
-/*Formulário*/
 .flex-container{
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +145,8 @@ fieldset{
     width: 80%;
     border: 3px solid;
     border-radius: 25px;
-    padding: 1em;
+    padding: 2em;
+    background: rgb(250, 250, 250);
 }
 
 legend{
@@ -176,11 +158,17 @@ legend{
 
 .item01 input{
     width: 40%;
-    font-size: 18px;
+    font-size: 16px;
     border: 2px solid;
     border-radius: 25px;
     padding: .2em;
     margin: 0 0 1em 0;
+}
+
+.item01 ::-webkit-input-placeholder{
+    padding: 1em;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
 }
 
 .item01, .item02, .item03, .item06{
@@ -188,7 +176,7 @@ legend{
 }
 
 .item02 label, .item03 label, .item04 label{
-    font-size: 22px;
+    font-size: 18px;
     font-family: cursive;
 }
 
@@ -198,54 +186,85 @@ legend{
 }
 
 .item02 [type=text]{
-    width: 20%;
-    height: 35px;
     border: 2px solid;
     border-radius: 25px;
+    height: 25px;
+}
+
+.item02{
+    margin-left: 32em;
+    margin-top: -10em;
 }
 
 .item02 [type=text]::-webkit-input-placeholder{
-    font-size: 18px;
-    padding: 2em;
+    font-family: Helvetica;
+    padding: 1em;
     text-align: center;
 }
 
 .item03{
-    margin: 1em 0;
+    widht: 100%;
+    margin-left: 42em;
+    margin-top: -12em;
+}
+
+.item03 label{
+    text-align: center;
+}
+
+.item03 input{
+    margin-left: 5em;
+}
+
+.item03 p{
+    margin-left: 5em;
+}
+
+.item04{
+    width: 100%;
+    margin-left: 44em;
+    margin-top: -2em;
 }
 
 .item04 select{
-    width: 15%;
     height: 30px;
     border: 2px solid;
     border-radius: 25px;
 }
 
 .item05{
-    margin: 1em 0;
+    margin: -2em 0 2em 0;
+}
+
+.item05 textarea{
+    border-radius: 25px;
+    padding: 1em;
+    border: 2px solid;
 }
 
 .item05 textarea::-webkit-input-placeholder{
     font-size: 18px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-family: Helvetica;
 }
 
 .item06 input{
+    position: absolute;
     font-size: 18px;
     font-family: Helvetica;
-    margin: 1em 0;
-    border-radius: 5px;
+    margin-left: 30em;
+    margin-top: -9em;
 }
 
 .item06 button{
-    font-size: 22px;
+    font-size: 18px;
     font-family: cursive;
-    margin: 0 1em;
     width: 15%;
     padding: .3em;
     border-radius: 25px;
-    background: rgb(255, 255, 0);
-    border: 5px solid rgb(255, 0, 179);
+    border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
     transition: .6s all;
 }
@@ -253,76 +272,145 @@ legend{
 .item06 button:hover{
     transform: scale(1.2);
 }
-/*Rodapé da página*/
-footer{
-    background-color: rgba(255, 255, 0, .6);
-    position: relative;
-    width: 100vw;
-    height: 500px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    margin-top: 75em;
+
+.item06 [type=submit]{
+    position: absolute;
+    margin-left: 14em;
 }
 
-.icon3-1, .icon3-2, .icon3-3{
+.item06 [type=reset]{
+    position: absolute;
+    margin-left: 30em;
+}
+
+/*Configurações do footer*/
+
+.box3{
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 60em;
+    background: rgb(250, 250, 250);
+    border-top-left-radius: 30px;
+    border-top-right-radius:  30px;
+    border-top: 2px solid yellow;
+}
+
+.footer1 h4{
+    position: absolute;
+    margin: 1em 8em;
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer1 .tel{
+    position: absolute;
+    margin: 6em 7em;
+    padding: 1em;
+    font-family: Helvetica;
+}
+
+.footer1 .hour{
+    position: absolute;
+    margin: 8em 3em;
+    padding: 1em;
+    font-family: Helvetica;
+}
+
+.footer1 .email{
+    position: absolute;
+    margin: 15em 7em;
+    font-family: Helvetica;
+}
+
+.footer1 img{
     width: 30px;
     height: 30px;
 }
 
-.footer1{
-     position: absolute;
-     margin: 5em 8em;
+.f1{
+    position: absolute;
+    margin: 4em 10em;
 }
 
-.footer1 p, .footer3 p{
-    font-family: Helvetica;
+.f2{
+    position: absolute;
+    margin: 4em 12em ;
 }
 
-.footer1 h4, .footer2 h4{
-    font-size: 22px;
+.f3{
+    position: absolute;
+    margin: 12em 11em;
+}
+
+.footer2 h4{
+    position: absolute;
+    width: 100%;
+    margin: 1em 55em;
     font-family: cursive;
-}
-
-.tel{
-    position: absolute;
-    width: 100%;
-    margin: -1.5em 4em ;
+    font-weight: 400;
     font-size: 18px;
 }
 
-.email{
+.footer2 img{
+    width: 40px;
+    height: 40px;
+}
+
+.f4{
     position: absolute;
-    margin: 2em;
-    font-size: 18px;
+    margin: 4em 63em;
 }
 
-.icon3-1, .icon3-2{
-    margin-top: 2em;
-}
-
-.icon3-3{
-    margin-top: 2em;
-}
-
-.footer2{
+.f5{
     position: absolute;
-    width: 100%;
-    margin: 5em 70em;
+    margin: 4em 67em;
 }
 
-.icon4{
-    margin: 1em;
+.f6{
+    position: absolute;
+    margin: 4em 71em;
+}
+
+.footer3 img{
+    position: absolute;
+    border-radius: 40%;
+    margin: 3em 34em;
 }
 
 .footer3 p{
     position: absolute;
-    margin: 25em 35em;
-    font-size: 18px;
+    margin: 17em 34em;
+    width: 50%;
+    font-family: Helvetica;
 }
 
-.logo-footer img{
-    position: absolute;
-    margin: 8em 40em;
-    border-radius: 40%;
+.footer4{
+    margin: 12em 63.5em;
 }
+
+.footer4 img{
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 0, 179);
+    border-radius: 50%;
+}
+
+.footer4 img:hover{
+    background-color: rgb(255, 0, 179);
+    border-radius: 5px;
+}
+
+.footer4 a{
+    padding: 0 1em;
+}
+
+
 
